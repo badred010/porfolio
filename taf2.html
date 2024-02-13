@@ -1,0 +1,87 @@
+<style>
+    .main {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(12, 1fr);
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1280px;
+      text-align: center;
+      
+    }
+    
+    .one, .two, .three, .four, .five, .six,
+    .seven, .eight, .nine, .ten, .eleven, .twelve {
+      grid-column-end: span 12;
+    }
+    
+    .nested {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .merge-two-rows { grid-row-end: span 2 }
+    .merge-three-rows { grid-row-end: span 3 }
+    .merge-four-rows { grid-row-end: span 4 }
+    .merge-five-rows { grid-row-end: span 5 }
+    .merge-six-rows { grid-row-end: span 6 }
+    
+    @media only screen and (min-width: 481px) {
+      .one { grid-column-end: span 1 }
+      .two { grid-column-end: span 2 }
+      .three { grid-column-end: span 3 }
+      .four { grid-column-end: span 4 }
+      .five { grid-column-end: span 5 }
+      .six { grid-column-end: span 6 }
+      .seven { grid-column-end: span 7 }
+      .eight { grid-column-end: span 8 }
+      .nine { grid-column-end: span 9 }
+      .ten { grid-column-end: span 10 }
+      .eleven { grid-column-end: span 11 }
+    }
+    
+    .styling {
+      background-color: rgba(224,18,101,0.5);
+      color: #fff;
+      border: 1px #E01266 solid;
+      border-radius: 4px;
+      padding: 12px;
+    }
+    </style>
+    
+    <div class="main">
+      
+      <div class="styling one">1</div>
+      <div class="styling one">2</div>
+      <div class="styling one">3</div>
+      <div class="styling one">4</div>
+      <div class="styling one">5</div>
+      <div class="styling one">6</div>
+      <div class="styling one">7</div>
+      <div class="styling one">8</div>
+      <div class="styling one">9</div>
+      <div class="styling one">10</div>
+      <div class="styling one">11</div>
+      <div class="styling one">12</div>
+    
+      <div class="styling two">1</div>
+      <div class="styling two">2</div>
+      <div class="styling two">3</div>
+      <div class="styling two">4</div>
+      <div class="styling two">5</div>
+      <div class="styling two">6</div>
+    
+      <div class="styling three">1</div>
+      <div class="styling three">2</div>
+      <div class="styling three">3</div>
+      <div class="styling three">4</div>
+    
+      <div class="styling four">1</div>
+      <div class="styling four">2</div>
+      <div class="styling four">3</div>
+    
+      <div class="styling six">1</div>
+      <div class="styling six">2</div>
+    
+      <div class="styling twelve">1</div>
